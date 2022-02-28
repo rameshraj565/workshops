@@ -1,0 +1,89 @@
+I, [2022-02-26T22:43:42.361255 #20504]  INFO -- Kitchen: -----> Starting Test Kitchen (v3.2.2)
+E, [2022-02-26T22:43:50.421237 #20504] ERROR -- Kitchen: ------Exception-------
+E, [2022-02-26T22:43:50.421379 #20504] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2022-02-26T22:43:50.421458 #20504] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant --version ----
+STDOUT: 
+STDERR: 'vagrant' is not recognized as an internal or external command,
+operable program or batch file.
+---- End output of vagrant --version ----
+Ran vagrant --version returned 1
+E, [2022-02-26T22:43:50.421528 #20504] ERROR -- Kitchen: ----------------------
+E, [2022-02-26T22:43:50.421593 #20504] ERROR -- Kitchen: ------Backtrace-------
+E, [2022-02-26T22:43:50.422417 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/shell_out.rb:70:in `rescue in run_command'
+E, [2022-02-26T22:43:50.422490 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/shell_out.rb:57:in `run_command'
+E, [2022-02-26T22:43:50.422571 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/kitchen-vagrant-1.11.0/lib/kitchen/driver/vagrant.rb:484:in `run_command'
+E, [2022-02-26T22:43:50.422671 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/kitchen-vagrant-1.11.0/lib/kitchen/driver/vagrant.rb:431:in `run'
+E, [2022-02-26T22:43:50.422770 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/kitchen-vagrant-1.11.0/lib/kitchen/driver/vagrant.rb:525:in `run_silently'
+E, [2022-02-26T22:43:50.422853 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/kitchen-vagrant-1.11.0/lib/kitchen/driver/vagrant.rb:591:in `vagrant_version'
+E, [2022-02-26T22:43:50.422921 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/kitchen-vagrant-1.11.0/lib/kitchen/driver/vagrant.rb:200:in `verify_dependencies'
+E, [2022-02-26T22:43:50.422978 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/plugin.rb:40:in `load'
+E, [2022-02-26T22:43:50.423032 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/driver.rb:37:in `for_plugin'
+E, [2022-02-26T22:43:50.423085 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/config.rb:235:in `new_driver'
+E, [2022-02-26T22:43:50.423137 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/config.rb:250:in `new_instance'
+E, [2022-02-26T22:43:50.423189 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/config.rb:143:in `block in build_instances'
+E, [2022-02-26T22:43:50.423240 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/config.rb:142:in `map'
+E, [2022-02-26T22:43:50.423292 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/config.rb:142:in `with_index'
+E, [2022-02-26T22:43:50.423343 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/config.rb:142:in `build_instances'
+E, [2022-02-26T22:43:50.423394 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/config.rb:116:in `instances'
+E, [2022-02-26T22:43:50.423445 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/command.rb:109:in `filtered_instances'
+E, [2022-02-26T22:43:50.423503 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/command.rb:139:in `parse_subcommand'
+E, [2022-02-26T22:43:50.423602 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/command/test.rb:39:in `block in call'
+E, [2022-02-26T22:43:50.423662 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/3.0.0/benchmark.rb:293:in `measure'
+E, [2022-02-26T22:43:50.423715 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/command/test.rb:37:in `call'
+E, [2022-02-26T22:43:50.423766 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/cli.rb:52:in `perform'
+E, [2022-02-26T22:43:50.423823 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/cli.rb:250:in `test'
+E, [2022-02-26T22:43:50.423873 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/thor-1.2.1/lib/thor/command.rb:27:in `run'
+E, [2022-02-26T22:43:50.423924 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/thor-1.2.1/lib/thor/invocation.rb:127:in `invoke_command'
+E, [2022-02-26T22:43:50.423975 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/thor-1.2.1/lib/thor.rb:392:in `dispatch'
+E, [2022-02-26T22:43:50.424026 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/thor-1.2.1/lib/thor/base.rb:485:in `start'
+E, [2022-02-26T22:43:50.424077 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/bin/kitchen:11:in `block in <top (required)>'
+E, [2022-02-26T22:43:50.424128 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/errors.rb:183:in `with_friendly_errors'
+E, [2022-02-26T22:43:50.424179 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/bin/kitchen:11:in `<top (required)>'
+E, [2022-02-26T22:43:50.424229 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/bin/kitchen:395:in `load'
+E, [2022-02-26T22:43:50.424280 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/bin/kitchen:395:in `<main>'
+E, [2022-02-26T22:43:50.424332 #20504] ERROR -- Kitchen: ----End Backtrace-----
+E, [2022-02-26T22:43:50.424383 #20504] ERROR -- Kitchen: ---Nested Exception---
+E, [2022-02-26T22:43:50.424433 #20504] ERROR -- Kitchen: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2022-02-26T22:43:50.424514 #20504] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant --version ----
+STDOUT: 
+STDERR: 'vagrant' is not recognized as an internal or external command,
+operable program or batch file.
+---- End output of vagrant --version ----
+Ran vagrant --version returned 1
+E, [2022-02-26T22:43:50.424569 #20504] ERROR -- Kitchen: ----------------------
+E, [2022-02-26T22:43:50.424630 #20504] ERROR -- Kitchen: ------Backtrace-------
+E, [2022-02-26T22:43:50.424684 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/shell_out.rb:70:in `rescue in run_command'
+E, [2022-02-26T22:43:50.424735 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/shell_out.rb:57:in `run_command'
+E, [2022-02-26T22:43:50.424786 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/kitchen-vagrant-1.11.0/lib/kitchen/driver/vagrant.rb:484:in `run_command'
+E, [2022-02-26T22:43:50.424836 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/kitchen-vagrant-1.11.0/lib/kitchen/driver/vagrant.rb:431:in `run'
+E, [2022-02-26T22:43:50.424887 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/kitchen-vagrant-1.11.0/lib/kitchen/driver/vagrant.rb:525:in `run_silently'
+E, [2022-02-26T22:43:50.424939 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/kitchen-vagrant-1.11.0/lib/kitchen/driver/vagrant.rb:591:in `vagrant_version'
+E, [2022-02-26T22:43:50.425014 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/kitchen-vagrant-1.11.0/lib/kitchen/driver/vagrant.rb:200:in `verify_dependencies'
+E, [2022-02-26T22:43:50.425069 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/plugin.rb:40:in `load'
+E, [2022-02-26T22:43:50.425120 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/driver.rb:37:in `for_plugin'
+E, [2022-02-26T22:43:50.425171 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/config.rb:235:in `new_driver'
+E, [2022-02-26T22:43:50.425222 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/config.rb:250:in `new_instance'
+E, [2022-02-26T22:43:50.425273 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/config.rb:143:in `block in build_instances'
+E, [2022-02-26T22:43:50.425323 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/config.rb:142:in `map'
+E, [2022-02-26T22:43:50.425373 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/config.rb:142:in `with_index'
+E, [2022-02-26T22:43:50.425425 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/config.rb:142:in `build_instances'
+E, [2022-02-26T22:43:50.425476 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/config.rb:116:in `instances'
+E, [2022-02-26T22:43:50.425527 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/command.rb:109:in `filtered_instances'
+E, [2022-02-26T22:43:50.425579 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/command.rb:139:in `parse_subcommand'
+E, [2022-02-26T22:43:50.425629 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/command/test.rb:39:in `block in call'
+E, [2022-02-26T22:43:50.425683 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/3.0.0/benchmark.rb:293:in `measure'
+E, [2022-02-26T22:43:50.425736 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/command/test.rb:37:in `call'
+E, [2022-02-26T22:43:50.425786 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/cli.rb:52:in `perform'
+E, [2022-02-26T22:43:50.425837 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/cli.rb:250:in `test'
+E, [2022-02-26T22:43:50.425888 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/thor-1.2.1/lib/thor/command.rb:27:in `run'
+E, [2022-02-26T22:43:50.425938 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/thor-1.2.1/lib/thor/invocation.rb:127:in `invoke_command'
+E, [2022-02-26T22:43:50.425990 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/thor-1.2.1/lib/thor.rb:392:in `dispatch'
+E, [2022-02-26T22:43:50.426041 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/thor-1.2.1/lib/thor/base.rb:485:in `start'
+E, [2022-02-26T22:43:50.426091 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/bin/kitchen:11:in `block in <top (required)>'
+E, [2022-02-26T22:43:50.426142 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/errors.rb:183:in `with_friendly_errors'
+E, [2022-02-26T22:43:50.426194 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/bin/kitchen:11:in `<top (required)>'
+E, [2022-02-26T22:43:50.426247 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/bin/kitchen:395:in `load'
+E, [2022-02-26T22:43:50.426298 #20504] ERROR -- Kitchen: C:/opscode/chef-workstation/bin/kitchen:395:in `<main>'
+E, [2022-02-26T22:43:50.426348 #20504] ERROR -- Kitchen: ----End Backtrace-----

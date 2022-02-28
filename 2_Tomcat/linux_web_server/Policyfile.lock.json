@@ -1,0 +1,104 @@
+{
+  "revision_id": "3f5758eb28ca28a7f60479852895ceed560cfae3a0f94aeb0f8be67f95e7cc91",
+  "name": "linux_web_server",
+  "run_list": [
+    "recipe[chef-client::init_service]",
+    "recipe[linux_web_server::default]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "chef-client": {
+      "version": "12.3.4",
+      "identifier": "9e4148496618fe2253acba978d67921a5dc0b48a",
+      "dotted_decimal_identifier": "44544825045162238.9662150538136935.160641939715210",
+      "cache_key": "chef-client-12.3.4-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-client/versions/12.3.4/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-client/versions/12.3.4/download",
+        "version": "12.3.4"
+      }
+    },
+    "cron": {
+      "version": "7.0.4",
+      "identifier": "1a771290a93ef89e9aaeea022d519d5584fc554a",
+      "dotted_decimal_identifier": "7449271014604536.44643122361281873.172990628910410",
+      "cache_key": "cron-7.0.4-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/cron/versions/7.0.4/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/cron/versions/7.0.4/download",
+        "version": "7.0.4"
+      }
+    },
+    "linux_web_server": {
+      "version": "0.1.0",
+      "identifier": "49f6edfa3f3ca5833abe73ec1345ed7c3b4b3247",
+      "dotted_decimal_identifier": "20819175266008229.36937811612144453.261117826511431",
+      "source": ".",
+      "cache_key": null,
+      "scm_info": null,
+      "source_options": {
+        "path": "."
+      }
+    },
+    "logrotate": {
+      "version": "3.0.9",
+      "identifier": "c9fde2dbe9dfa3d0218d4b2031ed77bc9158a175",
+      "dotted_decimal_identifier": "56855621112815523.58583685890322925.131651776061813",
+      "cache_key": "logrotate-3.0.9-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/logrotate/versions/3.0.9/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/logrotate/versions/3.0.9/download",
+        "version": "3.0.9"
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "chef-client",
+        "= 12.3.4"
+      ],
+      [
+        "cron",
+        "= 7.0.4"
+      ],
+      [
+        "linux_web_server",
+        ">= 0.0.0"
+      ],
+      [
+        "logrotate",
+        "= 3.0.9"
+      ]
+    ],
+    "dependencies": {
+      "chef-client (12.3.4)": [
+        [
+          "cron",
+          ">= 4.2.0"
+        ],
+        [
+          "logrotate",
+          ">= 1.9.0"
+        ]
+      ],
+      "cron (7.0.4)": [
+
+      ],
+      "linux_web_server (0.1.0)": [
+
+      ],
+      "logrotate (3.0.9)": [
+
+      ]
+    }
+  }
+}
